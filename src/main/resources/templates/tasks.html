@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+    <title>Todo list</title>
+</head>
+<body>
+    <ul>
+        <li th:each="task: ${tasks}" th:text="${task.title}">Hit the gym</li>
+    </ul>
+</body>
+</html>
